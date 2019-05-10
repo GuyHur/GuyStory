@@ -1,9 +1,10 @@
 """
 GuyStory v1.0.0
 """
-from configuration import *
-from classes.player import Player
 import pygame
+
+from classes.player import Player
+from configuration import *
 
 
 class Game(object):
@@ -61,6 +62,11 @@ class Game(object):
                 if keys[self.game.K_LEFT]:
                     self.player.move_left()
                     self.update()
+                if keys[self.game.K_RIGHT] and Player.current_position[0] < SCREEN_WIDTH - Player.width:
+                    self.player.move_right()
+                    self.update()
+                # if keys[self.game.K_SPACE]:
+                #     self.player.jump()
 
             self.update()
 

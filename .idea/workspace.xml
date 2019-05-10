@@ -1,7 +1,14 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="adad639f-c3e5-4b22-b532-4af3d9f7c55d" name="Default Changelist" comment="" />
+    <list default="true" id="adad639f-c3e5-4b22-b532-4af3d9f7c55d" name="Default Changelist" comment="">
+      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/classes/BUTTON.PY" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/GuyStory.py" beforeDir="false" afterPath="$PROJECT_DIR$/GuyStory.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/menu.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/menu.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/classes/player.py" beforeDir="false" afterPath="$PROJECT_DIR$/classes/player.py" afterDir="false" />
+    </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -12,41 +19,44 @@
     <session id="-2045870682">
       <usages-collector id="statistics.lifecycle.project">
         <counts>
-          <entry key="project.closed" value="9" />
+          <entry key="project.closed" value="14" />
           <entry key="project.open.time.0" value="2" />
           <entry key="project.open.time.3" value="1" />
           <entry key="project.open.time.4" value="3" />
-          <entry key="project.open.time.5" value="5" />
-          <entry key="project.open.time.6" value="1" />
-          <entry key="project.opened" value="12" />
+          <entry key="project.open.time.5" value="8" />
+          <entry key="project.open.time.6" value="2" />
+          <entry key="project.open.time.8" value="1" />
+          <entry key="project.open.time.9" value="1" />
+          <entry key="project.opened" value="18" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.open">
         <counts>
+          <entry key="PY" value="1" />
           <entry key="md" value="2" />
           <entry key="png" value="18" />
-          <entry key="py" value="8" />
+          <entry key="py" value="13" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.open">
         <counts>
           <entry key="Image" value="18" />
           <entry key="Markdown" value="2" />
-          <entry key="Python" value="8" />
+          <entry key="Python" value="14" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.extensions.edit">
         <counts>
           <entry key="dummy" value="6" />
           <entry key="md" value="108" />
-          <entry key="py" value="4057" />
+          <entry key="py" value="6101" />
         </counts>
       </usages-collector>
       <usages-collector id="statistics.file.types.edit">
         <counts>
           <entry key="Markdown" value="108" />
           <entry key="PLAIN_TEXT" value="6" />
-          <entry key="Python" value="4057" />
+          <entry key="Python" value="6101" />
         </counts>
       </usages-collector>
     </session>
@@ -54,13 +64,19 @@
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
       <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/player.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1083">
+              <caret line="58" selection-start-line="58" selection-end-line="58" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/GuyStory.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="304">
-              <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-              <folding>
-                <element signature="e#24#51#0" expanded="true" />
-              </folding>
+            <state relative-caret-position="358">
+              <caret line="67" column="16" selection-start-line="67" selection-start-column="18" selection-end-line="68" selection-end-column="40" />
             </state>
           </provider>
         </entry>
@@ -77,11 +93,11 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/../Python minecraft/py-in-the-world-master/main.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="19">
-              <caret line="85" column="6" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
+            <state relative-caret-position="646">
+              <caret line="45" column="9" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="9" />
               <folding>
                 <element signature="e#0#31#0" expanded="true" />
               </folding>
@@ -90,23 +106,30 @@
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/classes/player.py">
+        <entry file="file://$PROJECT_DIR$/classes/__init__.py">
+          <provider selected="true" editor-type-id="text-editor" />
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/classes/button.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="722">
-              <caret line="39" selection-start-line="39" selection-end-line="39" />
-              <folding>
-                <element signature="e#0#27#0" expanded="true" />
-                <marker date="1556475394596" expanded="true" signature="193:198" ph="..." />
-              </folding>
+            <state relative-caret-position="228">
+              <caret line="12" selection-start-line="12" selection-end-line="12" />
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/../python menu/menu.py">
+        <entry file="file://$PROJECT_DIR$/classes/menu.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="3040">
-              <caret line="160" column="18" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
+            <state relative-caret-position="361">
+              <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+              <folding>
+                <element signature="e#0#27#0" expanded="true" />
+                <marker date="1556729561130" expanded="true" signature="86:106" ph="..." />
+                <marker date="1556729561130" expanded="true" signature="436:491" ph="..." />
+                <marker date="1556729561130" expanded="true" signature="516:517" ph="..." />
+              </folding>
             </state>
           </provider>
         </entry>
@@ -132,33 +155,39 @@
   <component name="FindInProjectRecents">
     <findStrings>
       <find>RETICLE</find>
+      <find>LEFT</find>
+      <find>move</find>
     </findStrings>
+  </component>
+  <component name="Git.Settings">
+    <option name="RECENT_GIT_ROOT_PATH" value="$PROJECT_DIR$" />
   </component>
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
         <option value="$PROJECT_DIR$/Classes/Player.py" />
         <option value="$PROJECT_DIR$/TODO.md" />
-        <option value="$PROJECT_DIR$/GuyStory.py" />
         <option value="$PROJECT_DIR$/configuration.py" />
         <option value="$PROJECT_DIR$/menu.py" />
-        <option value="$PROJECT_DIR$/classes/player.py" />
+        <option value="$PROJECT_DIR$/classes/button.py" />
         <option value="$PROJECT_DIR$/classes/menu.py" />
         <option value="$PROJECT_DIR$/../Python minecraft/py-in-the-world-master/main.py" />
+        <option value="$PROJECT_DIR$/classes/player.py" />
+        <option value="$PROJECT_DIR$/GuyStory.py" />
       </list>
     </option>
   </component>
   <component name="ProjectFrameBounds" extendedState="6">
     <option name="x" value="-10" />
-    <option name="width" value="1355" />
+    <option name="width" value="1300" />
     <option name="height" value="1400" />
   </component>
+  <component name="ProjectLevelVcsManager" settingsEditedManually="true" />
   <component name="ProjectView">
     <navigator proportions="" version="1">
       <foldersAlwaysOnTop value="true" />
     </navigator>
     <panes>
-      <pane id="Scope" />
       <pane id="ProjectPane">
         <subPane>
           <expand>
@@ -175,6 +204,7 @@
           <select />
         </subPane>
       </pane>
+      <pane id="Scope" />
     </panes>
   </component>
   <component name="PropertiesComponent">
@@ -182,6 +212,7 @@
   </component>
   <component name="RecentsManager">
     <key name="MoveFile.RECENT_KEYS">
+      <recent name="C:\Users\גיא\Desktop\GuyStory 1" />
       <recent name="C:\Users\גיא\Desktop\GuyStory 1\classes" />
     </key>
   </component>
@@ -197,7 +228,7 @@
       </list>
     </option>
   </component>
-  <component name="RunManager" selected="Python.main">
+  <component name="RunManager" selected="Python.GuyStory">
     <configuration name="GuyStory" type="PythonConfigurationType" factoryName="Python" temporary="true">
       <module name="GuyStory 1" />
       <option name="INTERPRETER_OPTIONS" value="" />
@@ -312,9 +343,9 @@
     </list>
     <recent_temporary>
       <list>
+        <item itemvalue="Python.GuyStory" />
         <item itemvalue="Python.main" />
         <item itemvalue="Python.menu" />
-        <item itemvalue="Python.GuyStory" />
         <item itemvalue="Python.player" />
         <item itemvalue="Python.configuration" />
       </list>
@@ -335,13 +366,14 @@
   </component>
   <component name="ToolWindowManager">
     <frame x="-7" y="-7" width="2062" height="1126" extended-state="6" />
+    <editor active="true" />
     <layout>
-      <window_info active="true" content_ui="combo" id="Project" order="0" visible="true" weight="0.14864197" />
+      <window_info content_ui="combo" id="Project" order="0" visible="true" weight="0.07358025" />
       <window_info id="Structure" order="1" side_tool="true" weight="0.25" />
       <window_info id="Favorites" order="2" side_tool="true" />
       <window_info anchor="bottom" id="Message" order="0" />
       <window_info anchor="bottom" id="Find" order="1" />
-      <window_info anchor="bottom" id="Run" order="2" weight="0.34239677" />
+      <window_info active="true" anchor="bottom" id="Run" order="2" visible="true" weight="0.34239677" />
       <window_info anchor="bottom" id="Debug" order="3" weight="0.4" />
       <window_info anchor="bottom" id="Cvs" order="4" weight="0.25" />
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
@@ -404,17 +436,17 @@
     <entry file="file://$PROJECT_DIR$/images/character/left/walk2_0.png">
       <provider selected="true" editor-type-id="images" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/menu.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="5453">
-          <caret line="320" column="23" lean-forward="true" selection-start-line="320" selection-start-column="23" selection-end-line="320" selection-end-column="23" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$USER_HOME$/AppData/Local/Programs/Python/Python37-32/Lib/site-packages/pyglet/window/__init__.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="-21713">
           <caret line="724" column="23" selection-start-line="724" selection-start-column="23" selection-end-line="724" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/../python menu/menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="1876">
+          <caret line="160" column="18" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
         </state>
       </provider>
     </entry>
@@ -428,21 +460,36 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/classes/player.py">
+    <entry file="file://$PROJECT_DIR$/../Python minecraft/py-in-the-world-master/main.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="722">
-          <caret line="39" selection-start-line="39" selection-end-line="39" />
+        <state relative-caret-position="646">
+          <caret line="45" column="9" selection-start-line="45" selection-start-column="8" selection-end-line="45" selection-end-column="9" />
           <folding>
-            <element signature="e#0#27#0" expanded="true" />
-            <marker date="1556475394596" expanded="true" signature="193:198" ph="..." />
+            <element signature="e#0#31#0" expanded="true" />
           </folding>
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../python menu/menu.py">
+    <entry file="file://$PROJECT_DIR$/classes/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/button.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="3040">
-          <caret line="160" column="18" selection-start-line="160" selection-start-column="18" selection-end-line="160" selection-end-column="18" />
+        <state relative-caret-position="228">
+          <caret line="12" selection-start-line="12" selection-end-line="12" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/classes/menu.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="361">
+          <caret line="21" column="22" selection-start-line="21" selection-start-column="22" selection-end-line="21" selection-end-column="22" />
+          <folding>
+            <element signature="e#0#27#0" expanded="true" />
+            <marker date="1556729561130" expanded="true" signature="86:106" ph="..." />
+            <marker date="1556729561130" expanded="true" signature="436:491" ph="..." />
+            <marker date="1556729561130" expanded="true" signature="516:517" ph="..." />
+          </folding>
         </state>
       </provider>
     </entry>
@@ -453,23 +500,17 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/GuyStory.py">
+    <entry file="file://$PROJECT_DIR$/classes/player.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="304">
-          <caret line="16" column="9" selection-start-line="16" selection-start-column="9" selection-end-line="16" selection-end-column="9" />
-          <folding>
-            <element signature="e#24#51#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="1083">
+          <caret line="58" selection-start-line="58" selection-end-line="58" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/../Python minecraft/py-in-the-world-master/main.py">
+    <entry file="file://$PROJECT_DIR$/GuyStory.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="19">
-          <caret line="85" column="6" selection-start-line="85" selection-start-column="6" selection-end-line="85" selection-end-column="6" />
-          <folding>
-            <element signature="e#0#31#0" expanded="true" />
-          </folding>
+        <state relative-caret-position="358">
+          <caret line="67" column="16" selection-start-line="67" selection-start-column="18" selection-end-line="68" selection-end-column="40" />
         </state>
       </provider>
     </entry>
