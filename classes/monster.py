@@ -3,7 +3,7 @@ import pygame
 from tkinter import *
 from tkinter import messagebox
 
-class Player(pygame.sprite.Sprite):
+class Monster(pygame.sprite.Sprite):
     game = None
     image = None
     current_position = None
@@ -12,8 +12,6 @@ class Player(pygame.sprite.Sprite):
     attacking_image_index = 0
     lastDirection = None
     health = None
-    jumpcount = None
-    isJumping = None
 
     def __init__(self):
         pygame.sprite.Sprite.__init__(self)
@@ -24,8 +22,6 @@ class Player(pygame.sprite.Sprite):
         self.rect = self.image.get_rect()
         self.rect.center = (CHARACTER_SPAWN_X, CHARACTER_SPAWN_Y)
         self.health = CHARACTER_MAX_HEALTH
-        self.jumpcount = 10
-        self.isJumping = False
 
     def movement(self):
         if self.stance >= 3:
@@ -52,14 +48,6 @@ class Player(pygame.sprite.Sprite):
         self.standing_image_index += 1
         self.lastDirection = 0
 
-    def jump(self):
-        if self.jumpcount >= -10:
-            self.rect.y -= (self.jumpcount * abs(self.jumpcount)) * 0.5
-            self.jumpcount -= 1
-        else:
-            self.jumpcount = 10
-            self.isJump = False
-
     def die(self):
         Tk().wm_withdraw()  # to hide the main window
         messagebox.showinfo('You have died.', 'Exit')
@@ -73,11 +61,6 @@ class Player(pygame.sprite.Sprite):
         if self.attacking_image_index >= 3:
             self.attacking_image_index = 0
         self.attacking_image_index += 1
-
-    def checkCollision(self, player, monster):
-        collision = self.game.sprite.collide_rect(player, monster)
-        if collision == True:
-            monster.health -10
 
     def hit(self, damage):
         self.health -= damage
