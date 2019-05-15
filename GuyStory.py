@@ -5,6 +5,7 @@ import pygame
 
 from classes.player import Player
 from configuration import *
+from classes.monster import Monster
 
 
 class Game(object):
@@ -14,6 +15,10 @@ class Game(object):
     game_is_running = True
     player = None
     stance_event = None
+    sprites = None
+    clock = None
+    health_bar = None
+    monster = None
 
     def init(self):
         """
@@ -35,19 +40,34 @@ class Game(object):
         # Initialize the player class
         self.player = Player()
 
+        #Initialize the monster class
+        self.monster = Monster()
+
         # Initialize user events
         self.stance_event = self.game.USEREVENT + 1
+        self.attacking_event = self.game.USEREVENT + 2
         self.game.time.set_timer(self.stance_event, CHARACTER_STANCE_EVENT_INTERVAL)
+        self.sprites = pygame.sprite.Group()
+        self.sprites.add(self.player)
+        self.sprites.draw(self.window)
+
+        # Define a health bar
+
+        # Define a clock
+        self.clock = self.game.time.Clock()
 
         # Start game loop
         self.loop()
 
     def update(self):
         # Step 1, update the player
-        self.window.blit(self.player.current_image, self.player.current_position)
-
-        # Final step, update all of the information to the game
-        pygame.display.update()
+        self.sprites.update()
+        self.window.blit(self.background, (DEFAULT_BACKGROUND_X, DEFAULT_BACKGROUND_Y))
+        self.sprites.draw(self.window)
+        pygame.draw.rect(self.window, (0, 0, 0), pygame.Rect(self.player.rect.x - 15, self.player.rect.y - 15, 100, 7))
+        pygame.draw.rect(self.window, (255, 0, 0), pygame.Rect(self.player.rect.x - 15, self.player.rect.y - 15, self.player.health, 7))
+        self.game.display.flip()
+        self.clock.tick(30)
 
     def loop(self):
         while self.game_is_running:
@@ -55,18 +75,29 @@ class Game(object):
             for event in self.game.event.get():
                 if event.type == self.game.QUIT:
                     self.game_is_running = False
-                elif event.type == self.stance_event:
+
+                if event.type == self.stance_event:
                     self.player.movement()
-                    self.update()
-                keys = self.game.key.get_pressed()
-                if keys[self.game.K_LEFT]:
-                    self.player.move_left()
-                    self.update()
-                if keys[self.game.K_RIGHT] and Player.current_position[0] < SCREEN_WIDTH - Player.width:
-                    self.player.move_right()
-                    self.update()
-                # if keys[self.game.K_SPACE]:
-                #     self.player.jump()
+
+                if event.type == self.game.KEYDOWN:
+                    self.player.hit(5)
+                    # Check left right
+                    if (event.key == self.game.K_LEFT):
+                        self.player.move_left()
+                    elif (event.key == self.game.K_RIGHT):
+                        self.player.move_right()
+
+            keys_pressed = self.game.key.get_pressed()
+
+            if keys_pressed[self.game.K_LEFT]:
+                self.player.move_left()
+
+            if keys_pressed[self.game.K_RIGHT]:
+                self.player.move_right()
+            if keys_pressed[self.game.K_LCTRL]:
+                self.player.attack()
+            if keys_pressed[self.game.K_SPACE]:
+                self.player.jump()
 
             self.update()
 
