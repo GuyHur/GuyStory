@@ -1,8 +1,7 @@
 """
 GuyStory v1.0.0
 """
-import pygame
-
+import pygame, random, threading, sys
 from classes.player import Player
 from configuration import *
 from classes.monster import Monster
@@ -71,6 +70,12 @@ class Game(object):
 
     def loop(self):
         while self.game_is_running:
+
+        threading.Timer(6.7, Monster.random_movement)
+
+        self.game.mixer.init()
+        self.game.mixer.load('muscic.mp3')
+        self.game.mixer.music.play(-1, 0.0)
             # Close event
             for event in self.game.event.get():
                 if event.type == self.game.QUIT:
