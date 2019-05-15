@@ -25,3 +25,13 @@ CHARACTER_STANCE_EVENT_INTERVAL = 500
 CHARACTER_LEFT_WALKING = 'images/character/left/walk1_{pos}.png'
 CHARACTER_RIGHT_WALKING = 'images/character/right/walk1_{pos}.png'
 
+# Character movement
+CHARACTER_MOVEMENT_PIXELS = 5
+
+# Character Settings
+CHARACTER_MAX_HEALTH = 100
+
+# Character Attack
+CHARACTER_LEFT_ATTACKING = 'images/character/left/shoot1_{pos}.png'
+CHARACTER_RIGHT_ATTACKING = 'images/character/right/shoot1_{pos}.png'
+
